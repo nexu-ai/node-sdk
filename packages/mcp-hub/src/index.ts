@@ -12,7 +12,7 @@ export class MCPHub {
     return [];
   }
 
-  async connectToServer(serverId: string): Promise<MCPServer> {
+  async connectToServer(_serverId: string): Promise<MCPServer> {
     // TODO: Implement server connection
     throw new Error('Not implemented');
   }

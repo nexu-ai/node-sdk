@@ -1,12 +1,12 @@
 {
-  "name": "@nexu/shared",
+  "name": "@nexu-ai/shared",
   "version": "0.0.1",
-  "description": "Nexu Shared - Shared utilities and types",
+  "description": "Shared types and utilities for Nexu.sh",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch",
+    "dev": "tsc -w",
     "lint": "eslint src/**/*.ts",
     "prepublishOnly": "npm run build"
   },

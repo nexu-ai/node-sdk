@@ -1,17 +1,15 @@
 {
-  "name": "@nexu/core",
+  "name": "@nexu-ai/core",
   "version": "0.0.1",
-  "description": "Nexu Core - Core functionality for deploying and managing AI agents",
+  "description": "Core functionality for Nexu.sh",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch",
-    "lint": "eslint src/**/*.ts",
-    "prepublishOnly": "npm run build"
+    "dev": "tsc -w"
   },
   "dependencies": {
-    "@nexu/shared": "workspace:*",
+    "@nexu-ai/shared": "workspace:*",
     "@aws-sdk/client-lambda": "^3.0.0",
     "@aws-sdk/client-cloudformation": "^3.0.0"
   },

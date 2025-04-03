@@ -1,18 +1,18 @@
 {
-  "name": "@nexu/mcp-hub",
+  "name": "@nexu-ai/mcp-hub",
   "version": "0.0.1",
-  "description": "Nexu MCP Hub - Integration with MCP servers",
+  "description": "MCP Hub for Nexu.sh",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch",
+    "dev": "tsc -w",
     "lint": "eslint src/**/*.ts",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@nexu/shared": "workspace:*",
-    "@nexu/core": "workspace:*"
+    "@nexu-ai/shared": "workspace:*",
+    "@nexu-ai/core": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

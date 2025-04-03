@@ -1,4 +1,4 @@
-import { DeploymentOptions } from '@nexu/shared';
+import type { DeploymentOptions } from '@nexu-ai/shared';
 
 export class NexuCore {
   async deploy(options: DeploymentOptions) {

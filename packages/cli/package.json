@@ -1,7 +1,7 @@
 {
-  "name": "nexu",
+  "name": "@nexu-ai/cli",
   "version": "0.0.1",
-  "description": "Nexu CLI - The Vercel for AI agents in LATAM",
+  "description": "CLI for Nexu.sh - The Developer Experience Platform for AI Agents and MCP in LATAM",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
@@ -9,15 +9,14 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch",
-    "lint": "eslint src/**/*.ts",
-    "prepublishOnly": "npm run build"
+    "dev": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@nexu/core": "workspace:*",
-    "@nexu/templates": "workspace:*",
-    "@nexu/mcp-hub": "workspace:*",
-    "commander": "^11.1.0"
+    "@nexu-ai/core": "workspace:*",
+    "@nexu-ai/templates": "workspace:*",
+    "@nexu-ai/mcp-hub": "workspace:*",
+    "commander": "^13.1.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
@@ -35,16 +34,19 @@
   },
   "keywords": [
     "ai",
-    "agents",
+    "cli",
     "deployment",
-    "aws",
-    "latam",
-    "cli"
+    "mcp",
+    "latam"
   ],
-  "author": "Nico Silva",
+  "author": "Nexu.sh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nexu-sh/nexu.git"
-  }
+    "url": "git+https://github.com/nexu-ai/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nexu-ai/cli/issues"
+  },
+  "homepage": "https://github.com/nexu-ai/cli#readme"
 } 

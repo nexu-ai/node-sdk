@@ -1,23 +1,19 @@
 {
-  "name": "@nexu/templates",
+  "name": "@nexu-ai/templates",
   "version": "0.0.1",
-  "description": "Nexu Templates - Pre-configured templates for AI agents",
+  "description": "Templates for Nexu.sh",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch",
-    "lint": "eslint src/**/*.ts",
-    "prepublishOnly": "npm run build"
+    "dev": "tsc -w"
   },
   "dependencies": {
-    "@nexu/shared": "workspace:*",
-    "@nexu/core": "workspace:*"
+    "@nexu-ai/shared": "workspace:*",
+    "@nexu-ai/core": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "typescript": "^5.8.2",
-    "eslint": "^9.23.0"
+    "typescript": "^5.8.2"
   },
   "files": [
     "dist",

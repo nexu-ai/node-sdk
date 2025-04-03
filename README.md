@@ -9,27 +9,27 @@
 
 </div>
 
-## 🚀 The Vercel for AI Agents in LATAM
+## 🚀 La Plataforma para Agentes de IA en LATAM
 
-Nexu.sh es la plataforma de experiencia de desarrollador para agentes de inteligencia artificial y MCP en Latinoamérica. Convertimos un proceso que toma días o semanas en uno que toma segundos, con la misma simplicidad que ha hecho a Vercel indispensable para desarrolladores frontend.
+Nexu.sh es la plataforma de experiencia de desarrollador para agentes de inteligencia artificial y MCP en Latinoamérica. Transformamos un proceso que toma días o semanas en uno que toma segundos, proporcionando una experiencia de despliegue fluida para aplicaciones de IA.
 
 ## ✨ Características
 
-- **Deployment simplificado al extremo**
+- **Despliegue Simplificado**
   ```bash
-  nexu deploy chatbot-rag
+  nexu deploy agent
   ```
 
-- **Experiencia de desarrollador extraordinaria**
-  - CLI intuitivo inspirado en herramientas amadas como Vercel y Supabase
-  - Dashboard visual que muestra exactamente lo que necesitas
+- **Experiencia de Desarrollador Excepcional**
+  - CLI intuitivo con principios de diseño modernos
+  - Dashboard visual para monitoreo en tiempo real
   - Documentación completa en español y portugués
   - Templates optimizados para casos de uso latinoamericanos
 
-- **Hub de MCP integrado y sin fricción**
+- **Hub MCP Integrado**
   - Conecta con servidores MCP en segundos
   - Descubre nuevas capacidades sin escribir código
-  - Integra herramientas en tu workflow existente
+  - Integración fluida con flujos de trabajo existentes
 
 ## 📦 Instalación
 
@@ -41,7 +41,7 @@ npm install -g @nexu-ai/cli
 
 ```bash
 # Desplegar un agente
-nexu deploy chatbot-rag
+nexu deploy agent
 
 # Listar templates disponibles
 nexu templates list
@@ -94,4 +94,4 @@ Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 
 ## 🙏 Agradecimientos
 
-Gracias a todos nuestros [contribuidores](https://github.com/nexu-ai/cli/graphs/contributors) y a la comunidad de código abierto por su apoyo. Un agradecimiento especial a [Nicolás Silva](https://github.com/nicolascine) por crear y mantener este proyecto. 
+Extendemos nuestro agradecimiento a todos nuestros [contribuidores](https://github.com/nexu-ai/cli/graphs/contributors) y a la comunidad de código abierto por su apoyo. 

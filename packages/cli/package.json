@@ -1,0 +1,50 @@
+{
+  "name": "nexu",
+  "version": "0.0.1",
+  "description": "Nexu CLI - The Vercel for AI agents in LATAM",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "nexu": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@nexu/core": "workspace:*",
+    "@nexu/templates": "workspace:*",
+    "@nexu/mcp-hub": "workspace:*",
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.2",
+    "eslint": "^9.23.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "deployment",
+    "aws",
+    "latam",
+    "cli"
+  ],
+  "author": "Nexu Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nexu-sh/nexu.git"
+  }
+} 

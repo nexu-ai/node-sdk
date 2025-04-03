@@ -1,0 +1,19 @@
+{
+  "name": "nexu",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@9.13.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "eslint": "^9.23.0",
+    "prettier": "^3.5.3",
+    "turbo": "^2.4.4",
+    "typescript": "^5.8.2"
+  }
+}

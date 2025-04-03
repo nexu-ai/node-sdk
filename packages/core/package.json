@@ -1,0 +1,45 @@
+{
+  "name": "@nexu/core",
+  "version": "0.0.1",
+  "description": "Nexu Core - Core functionality for deploying and managing AI agents",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@nexu/shared": "workspace:*",
+    "@aws-sdk/client-lambda": "^3.0.0",
+    "@aws-sdk/client-cloudformation": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.2",
+    "eslint": "^9.23.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "deployment",
+    "aws",
+    "core"
+  ],
+  "author": "Nexu Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nexu-sh/nexu.git"
+  }
+} 

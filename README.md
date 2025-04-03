@@ -91,7 +91,3 @@ Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 - [Discord](https://discord.gg/nexu)
 - [Documentación](https://docs.nexu.sh)
 - [Autor](https://github.com/nicolascine) - Nicolás Silva
-
-## 🙏 Agradecimientos
-
-Extendemos nuestro agradecimiento a todos nuestros [contribuidores](https://github.com/nexu-ai/cli/graphs/contributors) y a la comunidad de código abierto por su apoyo. 

@@ -1,14 +1,13 @@
 {
   "name": "@nexu-ai/shared",
-  "version": "0.1.0",
-  "description": "Shared types and utilities for Nexu.sh",
+  "version": "0.0.4",
+  "description": "Shared types and utilities for Nexu.sh SDK",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
-    "lint": "eslint src/**/*.ts",
-    "prepublishOnly": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
@@ -26,14 +25,20 @@
   },
   "keywords": [
     "ai",
-    "agents",
-    "shared",
-    "types"
+    "sdk",
+    "types",
+    "utilities",
+    "latam"
   ],
-  "author": "Nico Silva",
+  "author": "Nexu.sh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nexu-ai/node-sdk.git"
-  }
+    "url": "git+https://github.com/nexu-ai/node-sdk.git",
+    "directory": "packages/shared"
+  },
+  "bugs": {
+    "url": "https://github.com/nexu-ai/node-sdk/issues"
+  },
+  "homepage": "https://github.com/nexu-ai/node-sdk#readme"
 }

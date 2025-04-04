@@ -1,23 +1,25 @@
 {
   "name": "@nexu-ai/templates",
-  "version": "0.1.0",
-  "description": "Templates for Nexu.sh",
+  "version": "0.0.4",
+  "description": "Pre-configured templates for Nexu.sh SDK",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@nexu-ai/shared": "^0.0.4",
     "@nexu-ai/core": "^0.0.4"
   },
   "devDependencies": {
-    "typescript": "^5.8.2"
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.2",
+    "eslint": "^9.23.0"
   },
   "files": [
-    "dist",
-    "templates"
+    "dist"
   ],
   "engines": {
     "node": ">=18.0.0"
@@ -27,14 +29,20 @@
   },
   "keywords": [
     "ai",
-    "agents",
+    "sdk",
     "templates",
-    "aws"
+    "deployment",
+    "latam"
   ],
-  "author": "Nico Silva",
+  "author": "Nexu.sh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nexu-ai/node-sdk.git"
-  }
+    "url": "git+https://github.com/nexu-ai/node-sdk.git",
+    "directory": "packages/templates"
+  },
+  "bugs": {
+    "url": "https://github.com/nexu-ai/node-sdk/issues"
+  },
+  "homepage": "https://github.com/nexu-ai/node-sdk#readme"
 }

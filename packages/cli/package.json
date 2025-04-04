@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@nexu-ai/core": "^0.0.4",
+    "@nexu-ai/shared": "^0.0.4",
     "@nexu-ai/templates": "^0.0.4",
     "@nexu-ai/mcp-hub": "^0.0.4",
     "commander": "^13.1.0"
@@ -43,10 +44,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nexu-ai/cli.git"
+    "url": "git+https://github.com/nexu-ai/node-sdk.git",
+    "directory": "packages/cli"
   },
   "bugs": {
-    "url": "https://github.com/nexu-ai/cli/issues"
+    "url": "https://github.com/nexu-ai/node-sdk/issues"
   },
-  "homepage": "https://github.com/nexu-ai/cli#readme"
+  "homepage": "https://github.com/nexu-ai/node-sdk#readme"
 }

@@ -1,14 +1,13 @@
 {
   "name": "@nexu-ai/mcp-hub",
-  "version": "0.1.0",
-  "description": "MCP Hub for Nexu.sh",
+  "version": "0.0.4",
+  "description": "MCP Hub integration for Nexu.sh SDK",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
-    "lint": "eslint src/**/*.ts",
-    "prepublishOnly": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@nexu-ai/shared": "^0.0.4",
@@ -30,14 +29,20 @@
   },
   "keywords": [
     "ai",
-    "agents",
+    "sdk",
     "mcp",
-    "hub"
+    "hub",
+    "latam"
   ],
-  "author": "Nico Silva",
+  "author": "Nexu.sh",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nexu-ai/node-sdk.git"
-  }
+    "url": "git+https://github.com/nexu-ai/node-sdk.git",
+    "directory": "packages/mcp-hub"
+  },
+  "bugs": {
+    "url": "https://github.com/nexu-ai/node-sdk/issues"
+  },
+  "homepage": "https://github.com/nexu-ai/node-sdk#readme"
 }

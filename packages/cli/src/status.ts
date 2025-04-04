@@ -1,6 +1,7 @@
 import { NexuCore } from '@nexu-ai/core';
+import type { DeploymentStatus } from '@nexu-ai/shared';
 
-export async function status(name: string) {
+export async function status(name: string): Promise<DeploymentStatus> {
   const core = new NexuCore();
   const deployment = await core.getDeploymentStatus(name);
 

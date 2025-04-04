@@ -13,7 +13,7 @@ Nexu.sh provides a command-line interface (CLI) and underlying SDK core librarie
 
 ## Core Features
 
-This project aims to simplify the workflow for developers working with specific AI agent architectures and MCP (Message Correlation Pattern) servers through the following capabilities:
+This project aims to simplify the workflow for developers working with specific AI agent architectures and MCP (Model Context Protocol) servers through the following capabilities:
 
 *   **Template-Based Deployment (`nexu deploy`)**: Automates the provisioning of cloud infrastructure (e.g., AWS Lambda, CloudFormation stacks) based on pre-defined templates. This allows for consistent and rapid setup of common agent patterns.
     ```bash
@@ -28,7 +28,7 @@ This project aims to simplify the workflow for developers working with specific 
     nexu config --profile default --region us-east-1
     ```
 *   **Pre-configured Templates (`@nexu-ai/templates`)**: Offers ready-to-use templates for common use cases (e.g., RAG Chatbot, Customer Service Assistant) as a starting point for deployments. See the [Available Templates](#available-templates) section.
-*   **MCP Hub Integration (`@nexu-ai/mcp-hub`)**: Provides utilities or integration points for interacting with MCP Hub servers (details specific to MCP Hub architecture).
+*   **MCP Hub Integration (`@nexu-ai/mcp-hub`)**: Provides utilities or integration points for interacting with Model Context Protocol Hub servers (details specific to MCP Hub architecture).
 
 ## Available Templates
 

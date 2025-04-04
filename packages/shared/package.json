@@ -5,12 +5,14 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && mkdir -p dist && tsc --declaration",
     "dev": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "@types/node": "^22.14.0"
+  },
   "devDependencies": {
-    "@types/node": "^22.14.0",
     "typescript": "^5.8.2",
     "eslint": "^9.23.0"
   },
@@ -26,8 +28,8 @@
   "keywords": [
     "ai",
     "sdk",
+    "shared",
     "types",
-    "utilities",
     "latam"
   ],
   "author": "Nexu.sh",

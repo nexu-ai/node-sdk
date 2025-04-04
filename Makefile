@@ -12,24 +12,27 @@ NC = \033[0m # No Color
 .PHONY: all install build test clean publish version help
 
 # Main commands
-all: install build
+all: build
 
-# Install dependencies
+# Install dependencies (only if node_modules doesn't exist)
 install:
-	@echo "$(YELLOW)Installing dependencies...$(NC)"
-	pnpm install --no-frozen-lockfile
+	@if [ ! -d "node_modules" ]; then \
+		echo "$(YELLOW)Installing dependencies...$(NC)"; \
+		pnpm install --no-frozen-lockfile; \
+	else \
+		echo "$(GREEN)Dependencies already installed.$(NC)"; \
+	fi
 
 # Build all packages
-build:
+build: install
 	@echo "$(YELLOW)Building packages...$(NC)"
-	pnpm build
+	pnpm turbo run build
 
 # Clean generated files
 clean:
 	@echo "$(YELLOW)Cleaning generated files...$(NC)"
-	rm -rf node_modules
-	rm -rf packages/*/node_modules
 	rm -rf packages/*/dist
+	rm -rf packages/*/*.tsbuildinfo
 	rm -rf .turbo
 
 # Publish all packages in order
@@ -71,7 +74,7 @@ dev:
 # Help
 help:
 	@echo "$(GREEN)Available commands:$(NC)"
-	@echo "  make install     - Install dependencies"
+	@echo "  make install     - Install dependencies (only if needed)"
 	@echo "  make build      - Build all packages"
 	@echo "  make clean      - Clean generated files"
 	@echo "  make publish    - Publish all packages"

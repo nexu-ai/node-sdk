@@ -1,14 +1,11 @@
 import { CloudFormationClient, DescribeStacksCommand } from '@aws-sdk/client-cloudformation';
-import { InvokeCommand, LambdaClient } from '@aws-sdk/client-lambda';
 import type { DeploymentOptions, DeploymentStatus } from '@nexu-ai/shared';
 
 export class NexuCore {
   private cloudFormation: CloudFormationClient;
-  private lambda: LambdaClient;
 
   constructor() {
     this.cloudFormation = new CloudFormationClient({});
-    this.lambda = new LambdaClient({});
   }
 
   async deploy(options: DeploymentOptions): Promise<DeploymentStatus> {

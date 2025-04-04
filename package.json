@@ -1,21 +1,31 @@
 {
   "name": "nexu",
   "version": "0.0.1",
-  "private": true,
-  "packageManager": "pnpm@9.13.0",
+  "description": "Nexu.sh SDK",
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "clean": "rm -rf node_modules && rm -rf packages/*/node_modules && rm -rf packages/*/dist",
-    "install": "pnpm install --frozen-lockfile"
+    "clean": "rm -rf packages/*/dist && rm -rf packages/*/*.tsbuildinfo && rm -rf .turbo",
+    "install": "pnpm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "ai",
+    "sdk",
+    "latam"
+  ],
+  "author": "Nexu.sh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexu-ai/node-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nexu-ai/node-sdk/issues"
+  },
+  "homepage": "https://github.com/nexu-ai/node-sdk#readme",
   "devDependencies": {
-    "@types/node": "^22.14.0",
+    "typescript": "^5.8.2",
     "eslint": "^9.23.0",
-    "prettier": "^3.5.3",
-    "turbo": "^2.4.4",
-    "typescript": "^5.8.2"
-  }
+    "turbo": "^1.12.3"
+  },
+  "packageManager": "pnpm@9.13.0+sha512.beb9e2a803db336c10c9af682b58ad7181ca0fbd0d4119f2b33d5f2582e96d6c0d93c85b23869295b765170fbdaa92890c0da6ada457415039769edf3c959efe"
 }

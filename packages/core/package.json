@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist && mkdir -p dist && tsc --build",
     "dev": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -32,7 +32,7 @@
     "ai",
     "sdk",
     "core",
-    "deployment",
+    "aws",
     "latam"
   ],
   "author": "Nexu.sh",

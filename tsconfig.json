@@ -20,9 +20,13 @@
     "typeRoots": ["./node_modules/@types"],
     "baseUrl": ".",
     "paths": {
-      "@nexu/*": ["packages/*/src"]
+      "@nexu-ai/*": ["./packages/*/src"]
     },
-    "composite": true
+    "composite": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
   "exclude": ["node_modules", "dist"]
 } 

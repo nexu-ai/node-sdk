@@ -27,14 +27,17 @@ importers:
   packages/cli:
     dependencies:
       '@nexu-ai/core':
-        specifier: ^0.0.2
-        version: 0.0.2
+        specifier: 0.0.4
+        version: 0.0.4
       '@nexu-ai/mcp-hub':
-        specifier: ^0.0.1
-        version: 0.0.1
+        specifier: 0.0.4
+        version: 0.0.4
+      '@nexu-ai/shared':
+        specifier: 0.0.4
+        version: 0.0.4
       '@nexu-ai/templates':
-        specifier: ^0.0.1
-        version: 0.0.1
+        specifier: 0.0.4
+        version: 0.0.4
       commander:
         specifier: ^13.1.0
         version: 13.1.0
@@ -58,8 +61,8 @@ importers:
         specifier: ^3.0.0
         version: 3.777.0
       '@nexu-ai/shared':
-        specifier: ^0.0.2
-        version: 0.0.2
+        specifier: ^0.0.4
+        version: 0.0.4
     devDependencies:
       '@types/node':
         specifier: ^22.14.0
@@ -74,11 +77,11 @@ importers:
   packages/mcp-hub:
     dependencies:
       '@nexu-ai/core':
-        specifier: workspace:*
-        version: link:../core
+        specifier: ^0.0.4
+        version: 0.0.4
       '@nexu-ai/shared':
-        specifier: workspace:*
-        version: link:../shared
+        specifier: ^0.0.4
+        version: 0.0.4
     devDependencies:
       '@types/node':
         specifier: ^22.14.0
@@ -105,12 +108,18 @@ importers:
   packages/templates:
     dependencies:
       '@nexu-ai/core':
-        specifier: workspace:*
-        version: link:../core
+        specifier: ^0.0.4
+        version: 0.0.4
       '@nexu-ai/shared':
-        specifier: workspace:*
-        version: link:../shared
+        specifier: ^0.0.4
+        version: 0.0.4
     devDependencies:
+      '@types/node':
+        specifier: ^22.14.0
+        version: 22.14.0
+      eslint:
+        specifier: ^9.23.0
+        version: 9.23.0
       typescript:
         specifier: ^5.8.2
         version: 5.8.2
@@ -292,20 +301,20 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@nexu-ai/core@0.0.2':
-    resolution: {integrity: sha512-qG3PkKWTuCTKb60aKg2VFXy9KeznHMLwE681PAc+p7SLyDh4Vn+JY+NNVwJCqAWRzHqCpwGQ64WKxU3DlwoaQA==}
+  '@nexu-ai/core@0.0.4':
+    resolution: {integrity: sha512-WIHK+mPKH3AMxy9OyNQknDzKU3q+Xm6nLqkoFN3pXivqUzRrQEPWi3juwyM5CqbtRv6K5Gahzk602SwBYjJqdw==}
     engines: {node: '>=18.0.0'}
 
-  '@nexu-ai/mcp-hub@0.0.1':
-    resolution: {integrity: sha512-YrpUurafJFkW5Gqr7F2/ypIE7K0l+wJ4QO6fw6EtMTllR9JwuDimFjI0YgCBDOqWFDwGvi6f18mklq4Mrs/HSA==}
+  '@nexu-ai/mcp-hub@0.0.4':
+    resolution: {integrity: sha512-+m251lY+9Zruh2A5GS4qv+vUjHyWafY17ydwJlwKxhrou9kmcqOaE5hWCCfT50u1mgZi8AX8eL1l6biLa6MNbA==}
     engines: {node: '>=18.0.0'}
 
-  '@nexu-ai/shared@0.0.2':
-    resolution: {integrity: sha512-EqGE8GwEtw0GgQT6PKxHrjnozGpWlMmnB+Djvh9sStYijqJRLBz3lfD7HZZEd53C3H9Q7cyaOHNaZ0gQH9vswQ==}
+  '@nexu-ai/shared@0.0.4':
+    resolution: {integrity: sha512-hi2lDeI6zbtdXaVdLJw5+iTyr6hsf6q4CgapO+fV0Tn8ioUGXdnC6ldLojCmJ4VLWziLXCDAYM1V4OknDiyoZg==}
     engines: {node: '>=18.0.0'}
 
-  '@nexu-ai/templates@0.0.1':
-    resolution: {integrity: sha512-H9m0BktiSzxYMIRimpfz6Pzh9KjBqp/D7cUEKForxKsRDrmnyhIRktNIuQp5xjPeU9fPuCcFNCt77c9JZD64yA==}
+  '@nexu-ai/templates@0.0.4':
+    resolution: {integrity: sha512-edg92C0TCnJv67r1vHrzYpkZ2M5tWcGK4BFvw82Hsj9M2T5AMYrEppKusPBmYa6rSjMJQQbLeFx1r4N+vXqFnw==}
     engines: {node: '>=18.0.0'}
 
   '@smithy/abort-controller@4.0.2':
@@ -1314,25 +1323,29 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@nexu-ai/core@0.0.2':
+  '@nexu-ai/core@0.0.4':
     dependencies:
       '@aws-sdk/client-cloudformation': 3.777.0
       '@aws-sdk/client-lambda': 3.777.0
-      '@nexu-ai/shared': 0.0.2
+      '@nexu-ai/shared': 0.0.4
     transitivePeerDependencies:
       - aws-crt
 
-  '@nexu-ai/mcp-hub@0.0.1':
+  '@nexu-ai/mcp-hub@0.0.4':
     dependencies:
-      '@nexu-ai/core': link:packages/core
-      '@nexu-ai/shared': link:packages/shared
+      '@nexu-ai/core': 0.0.4
+      '@nexu-ai/shared': 0.0.4
+    transitivePeerDependencies:
+      - aws-crt
 
-  '@nexu-ai/shared@0.0.2': {}
+  '@nexu-ai/shared@0.0.4': {}
 
-  '@nexu-ai/templates@0.0.1':
+  '@nexu-ai/templates@0.0.4':
     dependencies:
-      '@nexu-ai/core': link:packages/core
-      '@nexu-ai/shared': link:packages/shared
+      '@nexu-ai/core': 0.0.4
+      '@nexu-ai/shared': 0.0.4
+    transitivePeerDependencies:
+      - aws-crt
 
   '@smithy/abort-controller@4.0.2':
     dependencies:

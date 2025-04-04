@@ -17,18 +17,20 @@ all: install build
 # Install dependencies
 install:
 	@echo "$(YELLOW)Installing dependencies...$(NC)"
-	pnpm install
+	pnpm install --no-frozen-lockfile
 
 # Build all packages
 build:
 	@echo "$(YELLOW)Building packages...$(NC)"
-	pnpm -r run build
+	pnpm build
 
 # Clean generated files
 clean:
 	@echo "$(YELLOW)Cleaning generated files...$(NC)"
-	rm -rf packages/*/dist
+	rm -rf node_modules
 	rm -rf packages/*/node_modules
+	rm -rf packages/*/dist
+	rm -rf .turbo
 
 # Publish all packages in order
 publish: build
@@ -55,7 +57,7 @@ update-deps:
 		cd packages/$$pkg && \
 		for dep in $(PACKAGES); do \
 			if [ "$$pkg" != "$$dep" ]; then \
-				sed -i '' "s/\"@nexu-ai\/$$dep\": \".*\"/\"@nexu-ai\/$$dep\": \"^$$(node -p "require('./package.json').version")\"/" package.json; \
+				sed -i '' "s/\"@nexu-ai\/$$dep\": \".*\"/\"@nexu-ai\/$$dep\": \"$$(node -p "require('./package.json').version")\"/" package.json; \
 			fi \
 		done && \
 		cd ../..; \
@@ -64,7 +66,7 @@ update-deps:
 # Local development command
 dev:
 	@echo "$(YELLOW)Starting development mode...$(NC)"
-	pnpm -r run dev
+	pnpm dev
 
 # Help
 help:

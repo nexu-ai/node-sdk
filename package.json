@@ -4,10 +4,12 @@
   "private": true,
   "packageManager": "pnpm@9.13.0",
   "scripts": {
-    "build": "pnpm -r run build",
-    "dev": "pnpm -r run dev",
-    "lint": "pnpm -r run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "rm -rf node_modules && rm -rf packages/*/node_modules && rm -rf packages/*/dist",
+    "install": "pnpm install --frozen-lockfile"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

@@ -1,6 +1,6 @@
 {
   "name": "@nexu-ai/mcp-hub",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "MCP Hub for Nexu.sh",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,8 +11,8 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@nexu-ai/shared": "workspace:*",
-    "@nexu-ai/core": "workspace:*"
+    "@nexu-ai/shared": "^0.0.3",
+    "@nexu-ai/core": "^0.0.3"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

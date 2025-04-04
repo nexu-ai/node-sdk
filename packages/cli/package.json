@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "@nexu-ai/core": "^0.0.3",
-    "@nexu-ai/templates": "^0.0.1",
-    "@nexu-ai/mcp-hub": "^0.0.1",
+    "@nexu-ai/templates": "^0.0.3",
+    "@nexu-ai/mcp-hub": "^0.0.3",
     "commander": "^13.1.0"
   },
   "devDependencies": {

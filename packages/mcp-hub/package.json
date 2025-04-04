@@ -1,6 +1,6 @@
 {
   "name": "@nexu-ai/mcp-hub",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "MCP Hub integration for Nexu.sh SDK",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

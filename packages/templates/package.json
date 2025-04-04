@@ -1,6 +1,6 @@
 {
   "name": "@nexu-ai/templates",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Templates for Nexu.sh SDK",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

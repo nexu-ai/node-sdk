@@ -1,6 +1,6 @@
 {
   "name": "@nexu-ai/templates",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Templates for Nexu.sh",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,8 +9,8 @@
     "dev": "tsc -w"
   },
   "dependencies": {
-    "@nexu-ai/shared": "^0.0.3",
-    "@nexu-ai/core": "^0.0.3"
+    "@nexu-ai/shared": "^0.0.4",
+    "@nexu-ai/core": "^0.0.4"
   },
   "devDependencies": {
     "typescript": "^5.8.2"

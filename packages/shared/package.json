@@ -1,6 +1,6 @@
 {
   "name": "@nexu-ai/shared",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Shared types and utilities for Nexu.sh",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,6 +1,6 @@
 {
   "name": "@nexu-ai/cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "CLI for Nexu.sh - The Developer Experience Platform for AI Agents and MCP in LATAM",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,9 +13,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@nexu-ai/core": "^0.0.3",
-    "@nexu-ai/templates": "^0.0.3",
-    "@nexu-ai/mcp-hub": "^0.0.3",
+    "@nexu-ai/core": "^0.0.4",
+    "@nexu-ai/templates": "^0.0.4",
+    "@nexu-ai/mcp-hub": "^0.0.4",
     "commander": "^13.1.0"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "@nexu-ai/core",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Core functionality for Nexu.sh",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
     "dev": "tsc -w"
   },
   "dependencies": {
-    "@nexu-ai/shared": "^0.0.3",
+    "@nexu-ai/shared": "^0.0.4",
     "@aws-sdk/client-lambda": "^3.0.0",
     "@aws-sdk/client-cloudformation": "^3.0.0"
   },

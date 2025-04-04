@@ -27,14 +27,14 @@ importers:
   packages/cli:
     dependencies:
       '@nexu-ai/core':
-        specifier: workspace:*
-        version: link:../core
+        specifier: ^0.0.2
+        version: 0.0.2
       '@nexu-ai/mcp-hub':
-        specifier: workspace:*
-        version: link:../mcp-hub
+        specifier: ^0.0.1
+        version: 0.0.1
       '@nexu-ai/templates':
-        specifier: workspace:*
-        version: link:../templates
+        specifier: ^0.0.1
+        version: 0.0.1
       commander:
         specifier: ^13.1.0
         version: 13.1.0
@@ -58,8 +58,8 @@ importers:
         specifier: ^3.0.0
         version: 3.777.0
       '@nexu-ai/shared':
-        specifier: workspace:*
-        version: link:../shared
+        specifier: ^0.0.2
+        version: 0.0.2
     devDependencies:
       '@types/node':
         specifier: ^22.14.0
@@ -291,6 +291,22 @@ packages:
   '@humanwhocodes/retry@0.4.2':
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
+
+  '@nexu-ai/core@0.0.2':
+    resolution: {integrity: sha512-qG3PkKWTuCTKb60aKg2VFXy9KeznHMLwE681PAc+p7SLyDh4Vn+JY+NNVwJCqAWRzHqCpwGQ64WKxU3DlwoaQA==}
+    engines: {node: '>=18.0.0'}
+
+  '@nexu-ai/mcp-hub@0.0.1':
+    resolution: {integrity: sha512-YrpUurafJFkW5Gqr7F2/ypIE7K0l+wJ4QO6fw6EtMTllR9JwuDimFjI0YgCBDOqWFDwGvi6f18mklq4Mrs/HSA==}
+    engines: {node: '>=18.0.0'}
+
+  '@nexu-ai/shared@0.0.2':
+    resolution: {integrity: sha512-EqGE8GwEtw0GgQT6PKxHrjnozGpWlMmnB+Djvh9sStYijqJRLBz3lfD7HZZEd53C3H9Q7cyaOHNaZ0gQH9vswQ==}
+    engines: {node: '>=18.0.0'}
+
+  '@nexu-ai/templates@0.0.1':
+    resolution: {integrity: sha512-H9m0BktiSzxYMIRimpfz6Pzh9KjBqp/D7cUEKForxKsRDrmnyhIRktNIuQp5xjPeU9fPuCcFNCt77c9JZD64yA==}
+    engines: {node: '>=18.0.0'}
 
   '@smithy/abort-controller@4.0.2':
     resolution: {integrity: sha512-Sl/78VDtgqKxN2+1qduaVE140XF+Xg+TafkncspwM4jFP/LHr76ZHmIY/y3V1M0mMLNk+Je6IGbzxy23RSToMw==}
@@ -1297,6 +1313,26 @@ snapshots:
   '@humanwhocodes/retry@0.3.1': {}
 
   '@humanwhocodes/retry@0.4.2': {}
+
+  '@nexu-ai/core@0.0.2':
+    dependencies:
+      '@aws-sdk/client-cloudformation': 3.777.0
+      '@aws-sdk/client-lambda': 3.777.0
+      '@nexu-ai/shared': 0.0.2
+    transitivePeerDependencies:
+      - aws-crt
+
+  '@nexu-ai/mcp-hub@0.0.1':
+    dependencies:
+      '@nexu-ai/core': link:packages/core
+      '@nexu-ai/shared': link:packages/shared
+
+  '@nexu-ai/shared@0.0.2': {}
+
+  '@nexu-ai/templates@0.0.1':
+    dependencies:
+      '@nexu-ai/core': link:packages/core
+      '@nexu-ai/shared': link:packages/shared
 
   '@smithy/abort-controller@4.0.2':
     dependencies:

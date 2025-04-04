@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import { NexuCore } from '@nexu-ai/core';
-import type { Config } from '@nexu-ai/shared';
 import { Command } from 'commander';
 
 interface DeployOptions {
@@ -16,7 +15,7 @@ const program = new Command();
 program
   .name('nexu')
   .description('CLI for Nexu.sh - The Developer Experience Platform for AI Agents and MCP in LATAM')
-  .version('0.0.1');
+  .version('0.0.2');
 
 program
   .command('deploy')
@@ -27,15 +26,13 @@ program
   .option('-p, --profile <profile>', 'AWS profile')
   .action(async (options: DeployOptions) => {
     const core = new NexuCore();
-    const config: Config = {
-      region: options.region || 'us-east-1',
-      profile: options.profile
-    };
-    
     await core.deploy({
       template: options.template,
       name: options.name,
-      config
+      config: {
+        region: options.region || 'us-east-1',
+        profile: options.profile
+      }
     });
   });
 

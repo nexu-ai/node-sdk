@@ -1,6 +1,6 @@
 {
   "name": "@nexu-ai/core",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Core functionality for Nexu.sh",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
     "dev": "tsc -w"
   },
   "dependencies": {
-    "@nexu-ai/shared": "workspace:*",
+    "@nexu-ai/shared": "^0.0.3",
     "@aws-sdk/client-lambda": "^3.0.0",
     "@aws-sdk/client-cloudformation": "^3.0.0"
   },
@@ -38,6 +38,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nexu-sh/nexu.git"
+    "url": "https://github.com/nexu-ai/node-sdk.git"
   }
 } 

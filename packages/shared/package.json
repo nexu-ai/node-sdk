@@ -1,6 +1,6 @@
 {
   "name": "@nexu-ai/shared",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Shared types and utilities for Nexu.sh",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,6 +34,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nexu-sh/nexu.git"
+    "url": "https://github.com/nexu-ai/node-sdk.git"
   }
 } 

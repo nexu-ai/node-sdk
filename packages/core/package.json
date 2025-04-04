@@ -1,6 +1,6 @@
 {
   "name": "@nexu-ai/core",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Core functionality for Nexu.sh",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -40,4 +40,4 @@
     "type": "git",
     "url": "https://github.com/nexu-ai/node-sdk.git"
   }
-} 
+}

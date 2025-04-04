@@ -1,10 +1,19 @@
 export interface Config {
-  region: string;
+  region?: string;
   profile?: string;
 }
 
 export interface DeploymentOptions {
   template: string;
   name: string;
-  config: Config;
+  config?: Config;
+}
+
+export interface DeploymentStatus {
+  name: string;
+  status: string;
+  createdAt: string;
+  updatedAt: string;
+  url?: string;
+  error?: string;
 } 

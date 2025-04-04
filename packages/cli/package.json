@@ -1,6 +1,6 @@
 {
   "name": "@nexu-ai/cli",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "CLI for Nexu.sh - The Developer Experience Platform for AI Agents and MCP in LATAM",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -49,4 +49,4 @@
     "url": "https://github.com/nexu-ai/cli/issues"
   },
   "homepage": "https://github.com/nexu-ai/cli#readme"
-} 
+}

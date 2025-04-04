@@ -9,20 +9,20 @@
 
 </div>
 
-## 🚀 La Plataforma para Agentes de IA en LATAM
+## 🚀 La Plataforma de Experiencia de Desarrollador para Agentes AI y MCP en LATAM
 
-Nexu.sh es la plataforma de experiencia de desarrollador para agentes de inteligencia artificial y MCP en Latinoamérica. Transformamos un proceso que toma días o semanas en uno que toma segundos, proporcionando una experiencia de despliegue fluida para aplicaciones de IA.
+Nexu.sh es la plataforma que transforma la implementación de agentes de IA y servidores MCP en Latinoamérica. Convertimos un proceso que toma días o semanas en uno que toma segundos, proporcionando una experiencia de despliegue fluida y sin fricciones.
 
 ## ✨ Características
 
 - **Despliegue Simplificado**
   ```bash
-  nexu deploy agent
+  nexu deploy --template chatbot-rag --name mi-agente
   ```
 
 - **Experiencia de Desarrollador Excepcional**
-  - CLI intuitivo con principios de diseño modernos
-  - Dashboard visual para monitoreo en tiempo real
+  - CLI intuitivo con feedback en tiempo real
+  - Dashboard visual para monitoreo y gestión
   - Documentación completa en español y portugués
   - Templates optimizados para casos de uso latinoamericanos
 
@@ -30,6 +30,14 @@ Nexu.sh es la plataforma de experiencia de desarrollador para agentes de intelig
   - Conecta con servidores MCP en segundos
   - Descubre nuevas capacidades sin escribir código
   - Integración fluida con flujos de trabajo existentes
+
+## 🏗️ Agentes Disponibles
+
+1. **ChatBot RAG Empresarial**
+2. **Asistente de Atención al Cliente**
+3. **Agente de Procesamiento de Documentos**
+4. **Asistente de Ventas y Marketing**
+5. **Agente de Análisis de Datos Predictivo**
 
 ## 📦 Instalación
 
@@ -41,13 +49,13 @@ npm install -g @nexu-ai/cli
 
 ```bash
 # Desplegar un agente
-nexu deploy agent
+nexu deploy --template chatbot-rag --name mi-agente
 
-# Listar templates disponibles
-nexu templates list
+# Ver el estado de un despliegue
+nexu status --name mi-agente
 
-# Conectar con un servidor MCP
-nexu mcp connect
+# Configurar credenciales AWS
+nexu config --profile default --region us-east-1
 ```
 
 ## 🏗️ Arquitectura
